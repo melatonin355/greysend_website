@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from .models import AccountUser
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login
-
+from forms import UserCreationForm
 
 # Create your views here.
 def index(request):
