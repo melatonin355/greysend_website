@@ -84,7 +84,7 @@ DATABASES = {
 }
 
 # Use postgres DB when in proudction environment
-if os.environ.get('PRODUCTION') == 'true':
+if os.environ.get('DATABASE') == 'postgresql':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
